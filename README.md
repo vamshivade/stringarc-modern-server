@@ -80,7 +80,7 @@ This plan outlines a realistic 16-day schedule to push this project to GitHub us
 - **Files:** `package.json`, `.gitignore`, `.babelrc`, `.env.example`, `index.js` (root).
 - **Git Commands:**
   ```bash
-  git checkour -b chore/init-project
+  git checkout -b chore/init-project
   git add package.json .gitignore .babelrc index.js
   git commit -m "chore: init project structure and dependencies"
   git push origin chore/init-project
