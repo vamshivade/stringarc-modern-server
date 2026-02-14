@@ -1,0 +1,164 @@
+definitions:
+  securitySchemes:
+    tokenauth:
+      type: basic
+      description: bearer auth
+      name: Authorization
+      in: header
+    demouser:
+      type: basic
+  
+
+  signup:
+    required:
+      - email
+      - firstName
+      - lastName
+      - userName
+      - password
+      - confirmPassword
+      - referralCode
+    properties:
+      firstName:
+        type: string
+      lastName:
+        type: string
+      userName:
+        type: string
+      email:
+        type: string
+      password:
+        type: string
+      confirmPassword:
+        type: string
+      referralCode:
+        type: string
+      
+  connectWallet:
+    required:
+      - walletAddress
+    properties:
+      walletAddress:
+        type: string
+
+  login:
+    required:
+      - email
+      - password
+    properties:
+      email:
+        type: string
+      password: 
+        type: string
+
+
+  twoFALogin:
+    required:
+      - email
+      - password
+      - userToken
+    properties:
+      email:
+        type: string
+      password: 
+        type: string
+      userToken:
+        type: string 
+         
+
+  verifyOTP:
+    required:
+      - email
+      - otp
+    properties:
+      email:
+        type: string
+      otp:
+        type: string
+
+  resendOTP:
+    required:
+      - mobileNumber
+      - countryCode
+    properties:
+      mobileNumber:
+        type: string
+      countryCode:
+        type: string
+      
+
+  forgotPassword:
+    required:
+      - email
+    properties:
+      email:
+        type: string
+
+  resetPassword:
+    required:
+      - email
+      - password
+      - confirmPassword
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+      confirmPassword:
+        type: string
+
+  resendOtp:
+    required:
+      - email
+    properties:
+      email:
+        type: string
+        
+
+ 
+
+
+  editProfile:
+    properties:
+      email:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      userName:
+        type: string
+      bio:
+        type: string
+
+ 
+
+        
+  
+
+  changePassword:
+    required:
+      - oldPassword
+      - newPassword
+    properties:
+      oldPassword:
+        type: string
+      newPassword: 
+        type: string
+
+ 
+
+addStaticContent:
+    required:
+      - type
+      - title
+      - description
+    properties:
+      type:
+        type: string
+      title:
+        type: string
+      description:
+        type: string
+
+ 

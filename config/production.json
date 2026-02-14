@@ -1,0 +1,55 @@
+{
+  "port": 8080,
+  "hostAddress": "https://strback.stringarc8.io",
+  "websocketAddress": "wss://strback.stringarc8.io",
+  "databaseURI": "mongodb+srv://strmongarc:sfH2dJKakvvJ7qno@arcade8-string.asazg.mongodb.net/prod",
+
+  "databaseHost": "localhost",
+  "databasePort": "27017",
+  "databaseName": "pacman",
+  "jwtsecret": "nodejwt",
+  "jwtresetsecret": "nodejwt",
+  "aesKey": "gkjglhd53h4dfh32fdh4d53h4d23hdfh12df1d5gh4dfh2gd1hg23g1",
+  "adminWallet": "4NXuSXiCe17M5Szf2TDbAF7zXUPLvqAsy3uXwFevDxw3",
+  "nodemailer": {
+    "service": "office365",
+    "email": "support@stringarc8.io",
+    "password": "Nghdty@345TT"
+  },
+  "jwtOptions": {
+    "expiresIn": "24h"
+  },
+  "walletCred": {
+    "mnemonic": "ancient arch torch rough forest matter tongue lens obvious blouse nest ball",
+    "contractUSDTAddress": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+    "solHttpProvider": "https://api.mainnet-beta.solana.com",
+    "networkId": "1399811149",
+    "chainId": "1399811149"
+  },
+  "encryptionKey": "stringarc8_key",
+  "coingeckoAPIKEY": "CG-s79QVGs2s2E5kRPMUqEU5n6z",
+  "realTimePriceURL": "https://api.coingecko.com/api/v3/simple/price",
+  "swaggerDefinition": {
+    "info": {
+      "title": "String Arcade",
+      "version": "2.0",
+      "description": "String Arcade - API Docs"
+    },
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+
+  "cloudinary": {
+    "cloud_name": "dtwlov1bu",
+    "api_key": "186994437331353",
+    "api_secret": "f1WjaLDZ3pq9axIXdGKYXgL2--4"
+  },
+  "supportEmail": "support@stringarc8.io",
+  "solanaPrice": "https://api.mainnet-beta.solana.com"
+}
